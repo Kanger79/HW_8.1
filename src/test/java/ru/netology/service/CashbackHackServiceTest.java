@@ -18,7 +18,7 @@ public class CashbackHackServiceTest {
         System.out.println("Before cashback is " + actual);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void testRemainEqualBoundary() {
         CashbackHackService service = new CashbackHackService();
 
@@ -30,13 +30,13 @@ public class CashbackHackServiceTest {
         System.out.println("Before cashback is " + actual);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void testRemainMoreBoundary() {
         CashbackHackService service = new CashbackHackService();
 
-        int amount = 1800;
+        int amount = 2850;
         int actual = service.remain(amount);
-        int expected = 200;
+        int expected = 150;
 
         assertEquals(actual, expected);
         System.out.println("Before cashback is " + actual);
